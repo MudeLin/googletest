@@ -40,6 +40,12 @@ endif()
 # ${gtest_BINARY_DIR}.
 # Language "C" is required for find_package(Threads).
 project(gtest CXX C)
+
+if(METABUILD)
+  include("metabuild.cmake")
+  return()
+endif()
+
 cmake_minimum_required(VERSION 2.6.2)
 
 if (COMMAND set_up_hermetic_build)

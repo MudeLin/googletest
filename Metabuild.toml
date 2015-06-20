@@ -1,0 +1,8 @@
+[package]
+name = "gtest"
+version = "1.7.0"
+authors = ["Google"]
+
+[exports]
+includes = ["include"]
+
