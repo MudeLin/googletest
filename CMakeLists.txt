@@ -41,8 +41,8 @@ endif()
 # Language "C" is required for find_package(Threads).
 project(gtest CXX C)
 
-if(METABUILD)
-  include("metabuild.cmake")
+if(CPPBUILD)
+  include("cppbuild.cmake")
   return()
 endif()
 
